@@ -374,10 +374,20 @@ footer{
     }
 }
 
-.bio{
+/**.bio{
     display: flex;
-    height: 100%;
-}
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+}**/
+
+.redesSociales:hover{
+    transform: scale(2);
     
+}
+
+.maraVs{
+    background-color: darkkhaki;
+}
 
 
