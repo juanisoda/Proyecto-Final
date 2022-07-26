@@ -200,7 +200,7 @@ a:hover{
     background-color: goldenrod;
 }
 
-/**Areas**/
+/**Areas
 
 header{
     grid-area: header;
@@ -258,7 +258,9 @@ img{
     margin-top: 15px;
 }
 
-/**Media Queries**/
+**/
+
+/**Media Queries
 
 @media (max-width:500px){
     .gallery{
@@ -291,10 +293,6 @@ footer{
     justify-content: center;
 }
 
-/**nav ul, .spotify, article{
-    color: rgb(253, 252, 251);
-    border: 3px solid white;
-}**/
 }
 
 @media (min-width:768px){
@@ -373,6 +371,8 @@ footer{
         height: 100px;
     }
 }
+
+**/
 
 /**.bio{
     display: flex;
