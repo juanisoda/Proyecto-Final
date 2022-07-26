@@ -293,7 +293,7 @@ header{
     background-image: url(../images/_MG_7657.jpg);
     background-size: cover;
     background-position: center;
-    display: grid;
+    display: flex;
     justify-content: right;
 }
 
