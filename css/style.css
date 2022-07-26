@@ -315,15 +315,6 @@ nav ul li{
     list-style-type: none;
 }
 
-nav ul{
-    background-image: url(../images/fondoNav.jpg);
-    padding: 40px;
-    text-align: center;
-    background-repeat: repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 nav ul, .spotify, article, aside{
     color: rgb(103, 19, 236);
@@ -405,4 +396,14 @@ footer{
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.imagenFondo{
+    background-image: url(../images/fondoNav.jpg);
+    padding: 40px;
+    text-align: center;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
