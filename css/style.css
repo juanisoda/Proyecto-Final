@@ -387,7 +387,7 @@ footer{
 
 /**Bio**/
 
-.bio{
+.bio1, .bio2{
     font-size: 30px;
     font-family: monospace;
     font-style: italic;
@@ -406,4 +406,70 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
+/**
+.containerIndex{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "merchandising listenTospotify"
+    "session"
+    ;
+}
+
+.merchandising{
+    grid-area: merchandising;
+}
+
+.listenTospotify{
+    grid-area: listenTospotify;
+}
+
+.session{
+    grid-area: session;
+}
+
+@media(max-width: 992px){
+    .containerIndex{
+    grid-template-areas: 
+    "merchandising listenTospotify"
+    "session"
+        ;
+    }
+}
+**/
+
+.session {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .session iframe,
+    .session object,
+    .session embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    .merchandising{
+        display: inline-block;
+    }
+    .listenTospotify{
+        display: inline-block;
+    }
+    .miniGaleria{
+        display: inline-block;
+    }
+
+    .sponsor1, .sponsor2, .sponsor3{
+        display: inline-block;
+        gap: 15px;
+    }
