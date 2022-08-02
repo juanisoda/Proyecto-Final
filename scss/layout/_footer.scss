@@ -1,0 +1,16 @@
+footer{
+    padding: 80px;
+    background-color: chocolate;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+.redesSociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.redesSociales:hover{
+    transform: scale(2);
+    
+}

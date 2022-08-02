@@ -1,0 +1,30 @@
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul, .spotify, article, aside{
+    color: rgb(103, 19, 236);
+    border: 3px solid black;
+}
+
+a{
+    text-decoration: none;
+    padding: 7px;
+    color: rgb(253, 252, 251);
+    font-size: 30px;
+    background-color: rgb(233, 58, 15);
+    font-weight: bolder;
+}
+a:hover{
+    background-color: goldenrod;
+}
+.imagenFondo{
+    background-image: url(../images/fondoNav.jpg);
+    padding: 40px;
+    text-align: center;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}

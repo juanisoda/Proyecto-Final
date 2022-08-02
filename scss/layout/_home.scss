@@ -1,0 +1,63 @@
+.merchSpotify{
+    display: flex;
+    background-color: darkorange;
+    border: 20px solid black;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.merch{
+    border: 5px solid black;
+}
+
+.videoLive{
+    border: 5px solid black;
+    background-image: url(../images/fondoNav.jpg);
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.session {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .session iframe,
+    .session object,
+    .session embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    .merchandising{
+        display: inline-block;
+    }
+    .listenTospotify{
+        display: inline-block;
+    }
+    .miniGaleria{
+        display: inline-block;
+    }
+
+    .sponsor1, .sponsor2, .sponsor3{
+        display: inline-block;
+        gap: 15px;
+    }
+
+    .services{
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 5px;
+    }
+
+    .containerIndex{
+        background-color: darkgoldenrod;
+    }

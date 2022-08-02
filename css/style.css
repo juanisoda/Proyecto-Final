@@ -1,489 +1,144 @@
-/**rgb 233, 58, 15 Código del color en Hunt**/
-/**Mis fuentes
-font-family: 'Kanit', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Poiret One', cursive;
-**/
+footer {
+  padding: 80px;
+  background-color: chocolate;
+  margin-bottom: 0px;
+  margin-top: 15px; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/**
-header h1{
-    color: rgb(233, 58, 15);
-    font-family: 'Poiret One';
-    font-size: 70px;
-    text-align: left;
-    padding: 160px;
-    background-image: url(../images/_MG_7657.jpg);
-    background-size: cover;
-    background-position: center;
+.redesSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: right; }
+
+.redesSociales:hover {
+  transform: scale(2); }
+
+header {
+  color: #e93a0f;
+  font-family: 'Poiret One';
+  font-size: 50px;
+  padding: 130px;
+  background-image: url(../images/_MG_7657.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: right; }
+
+nav ul li {
+  list-style-type: none; }
+
+nav ul, .spotify, article, aside {
+  color: #6713ec;
+  border: 3px solid black; }
+
+a {
+  text-decoration: none;
+  padding: 7px;
+  color: #fdfcfb;
+  font-size: 30px;
+  background-color: #e93a0f;
+  font-weight: bolder; }
+
+a:hover {
+  background-color: goldenrod; }
+
+.imagenFondo {
+  background-image: url(../images/fondoNav.jpg);
+  padding: 40px;
+  text-align: center;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.studio {
+  font-size: 30px;
+  font-family: monospace;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 5px; 
+  background-color: goldenrod;
 }
 
-nav ul{
-    background-image: url(../images/fondoNav.jpg);
-    padding: 40px;
-    text-align: center;
-    background-repeat: repeat;
+.merchSpotify {
+  display: flex;
+  background-color: darkorange;
+  border: 20px solid black;
+  padding: 0px;
+  overflow: hidden; }
+
+.merch {
+  border: 5px solid black; }
+
+.videoLive {
+  border: 5px solid black;
+  background-image: url(../images/fondoNav.jpg);
+  display: flex;
+  justify-content: center;
+  margin-top: 5px; }
+
+.session {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16/9 ratio */
+  padding-top: 30px;
+  /* IE6 workaround*/
+  height: 0;
+  overflow: hidden; }
+
+.session iframe,
+.session object,
+.session embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.merchandising {
+  display: inline-block; }
+
+.listenTospotify {
+  display: inline-block; }
+
+.miniGaleria {
+  display: inline-block; 
+  margin-top: 5px;
+  gap: 20px;
+}
+
+.sponsor1, .sponsor2, .sponsor3 {
+  display: inline-block;
+  gap: 50px; }
+
+.sponsors{
+    background-color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-ul li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    padding: 7px;
-    color: rgb(253, 252, 251);
-    font-size: 30px;
-    background-color: rgb(233, 58, 15);
-    font-weight: bolder;
-}
-a:hover{
-    background-color: goldenrod;
-}
-**/
-
-
-
-/**
-main{
-    background-color: darkgoldenrod;
-    padding: 40px;
-}**/
-
-
-
-/**News
-
-.noticias{
-    display: flex;
-    flex-direction: column;
-    border: 10px ridge black;
-    padding: 100px;
-    justify-content: center;
-    margin:  5px 40px 80px 40px;
-    text-align: left;
-    background-color: coral;
-    font-size: 20px;
-    font-family: monospace;
-    font-style: italic;
-}**/
-
-
-
-/**Gallery Grid**/
-
-
-/**Areas
-
-header{
-    grid-area: header;
-}
-
-nav{
-    grid-area: nav;
-}
-
-.agradecimientos{
-    grid-area: agradecimientos;
-}    
-
-aside{
-    grid-area: contacto;
-}
-
-.spotify{
-    grid-area: spotify;
-}
-
-.galeriaGrid{
-    grid-area: galeriaGrilla;
-}
-
-footer{
-    grid-area: footer;
-}
-
-.gallery{
-    margin-bottom: 1.5em;
-    display: grid;
-    gap: 15px;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "agradecimientos"
-    "contacto"
-    "spotify"
-    "galeriaGrilla"
-    "footer";
-}
-
-.galeria{
-    background-color: coral;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
-    justify-items: center;
-}
-
-img{
-    border: 8px solid black;
-    margin-top: 15px;
-}
-
-**/
-
-/**Media Queries
-
-@media (max-width:500px){
-    .gallery{
-        margin: 0px;
-        grid-template-areas: 
-        "header header"
-        "nav    nav"
-        "agradecimientos"
-        "contacto"
-        "spotify spotify"
-        "galeriaGrilla galeriaGrilla"
-        "footer footer";
-        grid-template-columns: 1fr 3fr;
-    }
-
-
-h1, p, aside, .agradecimientos, .spotify{
-    border: 2px solid chocolate;
-    background-color: darkorange;
-    color: black;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: column;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-}
-
-}
-
-@media (min-width:768px){
-    .gallery{
-        background-color: chocolate;
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "agradecimientos contacto contacto"
-        "spotify spotify spotify"
-        "galeriaGrilla galeriaGrilla galeriaGrilla"
-        "footer footer footer";
-        grid-template-columns: 1fr 4fr 1fr;
-        margin-bottom: 1.5em;
-    }
-
-nav ul{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-h1, p, aside, .agradecimientos, .spotify{
-    border: 2px solid brown;
-    background-color: coral;
-    color: white;
+.services {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5px; }
+
+.containerIndex {
+  background-color: darkgoldenrod; }
+
+.bio1, .bio2 {
+  font-size: 30px;
+  font-family: monospace;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px; 
+  background-color: goldenrod;
 }
-
-.galeria{
-    background-color: brown;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin: 3em;
-
-}
-
-img{
-    border: 5px solid goldenrod;
-}
-
-.fotos{
-    width: 500px;
-    height: 500px;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-}
-}
-
-
-@media (max-whidt: 1200px){
-    .gallery{
-        color: chocolate;
-    }
-
-    .galeria{
-        padding: 1.5em;
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        height: auto;
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    img{
-        margin-top: 20px;
-    }
-
-    .fotos{
-        width: 100px;
-        height: 100px;
-    }
-}
-
-**/
-
-/**.bio{
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
-    padding-right: 50px;
-}**/
-
-.redesSociales:hover{
-    transform: scale(2);
-    
-}
-
-.maraVs{
-    background-color: darkkhaki;
-}
-
-
-.container{
-
-    display: flex;
-    background-color: darkorange;
-    border: 20px solid black;
-    padding: 0px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-
-}
-
-/**Header**/
-
-header{
-    color: rgb(233, 58, 15);
-    font-family: 'Poiret One';
-    font-size: 50px;
-    padding: 130px;
-    background-image: url(../images/_MG_7657.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: right;
-}
-
-.agradecimientos{
-    font-size: 30px;
-
-    justify-content: center;
-}
-
-body{
-    text-align: center;
-    font-family: 'Poiret One';
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-nav ul li{
-    list-style-type: none;
-}
-
-
-nav ul, .spotify, article, aside{
-    color: rgb(103, 19, 236);
-    border: 3px solid black;
-}
-
-a{
-    text-decoration: none;
-    padding: 7px;
-    color: rgb(253, 252, 251);
-    font-size: 30px;
-    background-color: rgb(233, 58, 15);
-    font-weight: bolder;
-}
-a:hover{
-    background-color: goldenrod;
-}
-
-/**Studio**/
-
-.studio{
-    font-size: 30px;
-    font-family: monospace;
-    font-style: italic;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 5px;
-}
-
-.merchSpotify{
-    display: flex;
-    background-color: darkorange;
-    border: 20px solid black;
-    padding: 0px;
-    overflow: hidden;
-}
-
-.merch{
-    border: 5px solid black;
-}
-
-
-footer{
-    padding: 80px;
-    background-color: chocolate;
-    margin-bottom: 0px;
-    margin-top: 15px;
-}
-
-/**Footer**/
-
-.redesSociales{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-}
-
-
-/**Video Live Session**/
-
-.videoLive{
-    border: 5px solid black;
-    background-image: url(../images/fondoNav.jpg);
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-/**Bio**/
-
-.bio1, .bio2{
-    font-size: 30px;
-    font-family: monospace;
-    font-style: italic;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.imagenFondo{
-    background-image: url(../images/fondoNav.jpg);
-    padding: 40px;
-    text-align: center;
-    background-repeat: repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-/**
-.containerIndex{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "merchandising listenTospotify"
-    "session"
-    ;
-}
-
-.merchandising{
-    grid-area: merchandising;
-}
-
-.listenTospotify{
-    grid-area: listenTospotify;
-}
-
-.session{
-    grid-area: session;
-}
-
-@media(max-width: 992px){
-    .containerIndex{
-    grid-template-areas: 
-    "merchandising listenTospotify"
-    "session"
-        ;
-    }
-}
-**/
-
-.session {
-    position: relative;
-    padding-bottom: 56.25%; /* 16/9 ratio */
-    padding-top: 30px; /* IE6 workaround*/
-    height: 0;
-    overflow: hidden;
-    }
-    
-    .session iframe,
-    .session object,
-    .session embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    }
-    .merchandising{
-        display: inline-block;
-    }
-    .listenTospotify{
-        display: inline-block;
-    }
-    .miniGaleria{
-        display: inline-block;
-    }
-
-    .sponsor1, .sponsor2, .sponsor3{
-        display: inline-block;
-        gap: 15px;
-    }
-
-    .services{
-        display: inline-block;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 5px;
-    }
-
-    .containerIndex{
-        background-color: darkgoldenrod;
-    }
