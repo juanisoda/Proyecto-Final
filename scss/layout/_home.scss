@@ -38,15 +38,14 @@
         display: inline-block;
     }
     .listenTospotify{
-        display: inline-block;
+        @extend .merchandising,
     }
     .miniGaleria{
-        display: inline-block;
+        @extend .merchandising,
     }
 
     .sponsor1, .sponsor2, .sponsor3{
-        display: inline-block;
-        gap: 15px;
+        @include home;
     }
 
     .services{
